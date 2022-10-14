@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketApp.Mvc", "MarketApp\MarketApp.Mvc.csproj", "{122AC7DB-F4A8-4DF1-8DCD-20FE12168B40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C791EDBE-6690-4F94-9183-548A26CDAA83}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{5E550673-C7C8-4D40-B19C-EE50BDEA75A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketApp.Data", "MarketApp.Data\MarketApp.Data.csproj", "{375CEF76-A8AA-4A4A-BEF0-9CE3C5E40A46}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketApp.Domain", "MarketApp.Domain\MarketApp.Domain.csproj", "{1B98991C-AA6E-4C23-8738-761C9203C6B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketApp.Service", "MarketApp.Service\MarketApp.Service.csproj", "{F15E5569-FCA1-440E-AFF3-4C51D37A6F4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketApp.Test", "MarketApp.Test\MarketApp.Test.csproj", "{922053CC-E7A5-46BC-A5FC-F83EED578799}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{122AC7DB-F4A8-4DF1-8DCD-20FE12168B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{122AC7DB-F4A8-4DF1-8DCD-20FE12168B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{122AC7DB-F4A8-4DF1-8DCD-20FE12168B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{122AC7DB-F4A8-4DF1-8DCD-20FE12168B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{375CEF76-A8AA-4A4A-BEF0-9CE3C5E40A46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{375CEF76-A8AA-4A4A-BEF0-9CE3C5E40A46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{375CEF76-A8AA-4A4A-BEF0-9CE3C5E40A46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{375CEF76-A8AA-4A4A-BEF0-9CE3C5E40A46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B98991C-AA6E-4C23-8738-761C9203C6B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B98991C-AA6E-4C23-8738-761C9203C6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B98991C-AA6E-4C23-8738-761C9203C6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B98991C-AA6E-4C23-8738-761C9203C6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F15E5569-FCA1-440E-AFF3-4C51D37A6F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F15E5569-FCA1-440E-AFF3-4C51D37A6F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F15E5569-FCA1-440E-AFF3-4C51D37A6F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F15E5569-FCA1-440E-AFF3-4C51D37A6F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922053CC-E7A5-46BC-A5FC-F83EED578799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922053CC-E7A5-46BC-A5FC-F83EED578799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922053CC-E7A5-46BC-A5FC-F83EED578799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922053CC-E7A5-46BC-A5FC-F83EED578799}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{122AC7DB-F4A8-4DF1-8DCD-20FE12168B40} = {C791EDBE-6690-4F94-9183-548A26CDAA83}
+		{375CEF76-A8AA-4A4A-BEF0-9CE3C5E40A46} = {C791EDBE-6690-4F94-9183-548A26CDAA83}
+		{1B98991C-AA6E-4C23-8738-761C9203C6B4} = {C791EDBE-6690-4F94-9183-548A26CDAA83}
+		{F15E5569-FCA1-440E-AFF3-4C51D37A6F4D} = {C791EDBE-6690-4F94-9183-548A26CDAA83}
+		{922053CC-E7A5-46BC-A5FC-F83EED578799} = {5E550673-C7C8-4D40-B19C-EE50BDEA75A4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {860E49C5-2BC4-476B-8A91-608F448AA993}
+	EndGlobalSection
+EndGlobal

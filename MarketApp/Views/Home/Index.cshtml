@@ -1,0 +1,73 @@
+﻿@using MarketApp.Domain.Configurations
+@using MarketApp.Domain.Entities
+
+
+@model PaginationMetaData<Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div>
+    <h3 class="display-4 text-center">NAPA Market</h3>
+    <br/>
+
+    <p>
+        <a asp-action="Create">"Create New"</a>
+    </p>
+
+    <form asp-controller="Home" asp-action="Index" method="get">
+        <label for="searchTxt">Enter the name: </label>
+        <input type="text" id="searchtxt" name="SearchString" placeholder="Search"/>
+        <input type="submit" value="Search"/>
+    </form>
+    <br/>
+    <br/>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ItemName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+        @{
+            var previousDisabled = !Model.HasPreviousPage ? "disable" : "";
+            var nextDisabled = !Model.HasNextPage ? "disable" : "";
+        }
+
+        <a asp-action="Index" asp-route-pageIndex="@(Model.PageIndex - 1)"
+        class="btn btn-default @previousDisabled">Previous</a>
+
+        <a asp-action="Index" asp-route-pageIndex="@(Model.PageIndex + 1)" 
+        class="btn btn-default @nextDisabled">Next</a>
+</div>
